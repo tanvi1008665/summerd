@@ -1,0 +1,66 @@
+step-1 install uv in your system 
+
+step-2 create a new folder and open vs code in it . 
+
+step-3 open the terminlal and write 'uv init mysummerd' 
+
+
+step-4 close the vs code and open vs code from the mysummerd folder . 
+
+step-5 open the terminal and write 
+uv venv 
+
+step-6 .venv\Scripts\activate 
+
+step-7 we create a 'requirements.txt' file in which we will store all the packages which is important for runnig the application .
+Now open the terminal and write
+
+uv add -r requirements.txt 
+
+
+step-8  load your csv data 
+
+step-9  in main.py file  , we will write all the logics 
+
+create a folder 'local-folder' in which you will store your main.py , requirements.txt , insurance.csv' 
+
+
+
+
+step-10 Upload all the data on github . 
+
+git init 
+
+git add . 
+
+git commit -m "added" 
+
+git remote add origin https://github.com/<user-name>.git 
+
+git branch -M main
+
+
+git push -u origin main 
+
+
+
+
+
+step-11 open the aws , 
+
+IAM ----> User ----> New user ----> attach policy (s3fullaccess , administratoraccess) ----> Access key , Access key ID   .
+
+AWS ----> S3 ---> Create a bucket 'loan-default-model-bucket'  ---> create bucket 
+
+
+go to github ---> settings ---> secrets and variables ---> Actions ---> 
+
+Add 
+
+AWS_ACCESS_KEY_ID 
+
+AWS_SECRET_ACCESS_KEY 
+
+
+
+
